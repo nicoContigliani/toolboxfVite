@@ -15,10 +15,10 @@ const Files = () => {
 
     useEffect(() => {
         onAction()
-        
+
     }, [])
-    
-    
+
+
     const onAction = async () => {
         dispatch(fileAsync(data))
     }
@@ -30,7 +30,8 @@ const Files = () => {
     return (
         <>
             {
-                (file.length == 0) ? <Spinner /> :
+                (file.length === 0)
+                    ? <Spinner /> :
                     <Tables
                         className="tables"
                         column={file}

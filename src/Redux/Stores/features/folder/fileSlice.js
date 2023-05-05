@@ -13,7 +13,6 @@ export const fileAsync = createAsyncThunk(
   'file/axios',
   async (data) => {
     const response = await useAxios(data);
-
     return response[0];
   }
 );
